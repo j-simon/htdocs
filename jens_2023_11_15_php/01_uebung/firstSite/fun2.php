@@ -6,10 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-   <b>
-    <?php
-    echo "PHP is fun!";
-   ?>
-   </b>
+    
+<?php
+   echo "PHP is fun!";
+?>
+
+
 </body>
 </html>

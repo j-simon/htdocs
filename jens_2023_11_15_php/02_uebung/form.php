@@ -9,8 +9,14 @@
 
 <body>
     <form>
-        username <input type="text" name="username" value="<?php echo 'Mr. X'; ?>" /><br>
-        password <input type="password" name="password" value="<?php echo '*****'; ?>" /><br>
+      username<input type="text" name="username" value="Mr. X" /><br>
+      password<input type="password" name="password" value="*****" /><br>
+      <input type="submit" value="login" />
+    </form>
+
+    <form>
+        username <input type="text" name="username" value="<?php echo "Mr. X"; ?>" /><br>
+        password <input type="password" name="password" value="<?php echo "geheim"; ?>" /><br>
         <input type="submit" value="login" />
     </form>
 </body>
