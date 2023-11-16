@@ -1,0 +1,1 @@
+## Hier befinden sich alle Unterrichtsdateien inklusive allen Übungen aus dem PHP 8: Sprachkern und Syntax WBT, jeden Tag kommt ein neues Verzeichnis hinzu.
