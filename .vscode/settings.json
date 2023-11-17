@@ -2,5 +2,5 @@
     "intelephense.files.associations": [
         "*.php",
         "*.phtml"
-    ]
+    ]  
 }
