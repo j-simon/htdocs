@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
-<?php
-/*
+
+    <?php
+    /*
 MySQL - Datentypen
 Texte 
 -----------
@@ -46,24 +48,25 @@ null
 
 
 */
-$vorname = "Jens"; // string
-echo gettype($vorname); // string
+    $vorname = "Jens"; // string
+    echo gettype($vorname); // string
 
-$vorname = 12; // integer
-echo gettype($vorname); // intger
+    $vorname = 12; // integer
+    echo gettype($vorname); // intger
 
-$zahl= 134;
-$zahl2= 134.333; // float/double
-$wahrheits = false;
+    $zahl = 134;
+    $zahl2 = 134.333; // float/double
+    $wahrheits = false;
 
-
-$alter = null; // Es gibt eine Variable alter , deren Wert ich NOCH NICHT kenne, also merke ich dies nicht 
-
-
-
-$alter = 18;
+    
+    $alter = null; // Es gibt eine Variable alter , deren Wert ich NOCH NICHT kenne, also merke ich dies nicht 
 
 
-?>
+
+    $alter = 18;
+
+
+    ?>
 </body>
+
 </html>
