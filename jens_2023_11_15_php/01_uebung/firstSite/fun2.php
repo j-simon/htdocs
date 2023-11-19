@@ -8,7 +8,13 @@
 <body>
     
 <?php
-   echo "PHP is fun!";
+   $value = "0";
+   if (empty($value)) {
+       echo "PHP is pain!";
+   }
+   else {
+         echo "PHP is fun!";
+   }
 ?>
 
 
