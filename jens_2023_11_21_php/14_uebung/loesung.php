@@ -2,7 +2,7 @@
 
 // Schreibe eine Funktion, die zwei numerische Werte entgegennimmt, 
 // diese multipliziert und das Ergebnis zurückgibt. 
-function multipliziere($a ,$b){
+function multipliziere( $a ,$b){
   $rechenErgebnis = $a * $b;
 
   return  $rechenErgebnis;
