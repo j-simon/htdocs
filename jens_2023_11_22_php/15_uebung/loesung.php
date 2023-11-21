@@ -9,9 +9,9 @@ declare(strict_types=1);
 */
 
 function pruefeAufGeradeOderUngerade(int $wert) : string {
-    if(){
+   /* if(){
         
-    }
+    }*/
     return "gerade";
 }
 
