@@ -1,4 +1,6 @@
 <?php
+
+
    //declare(strict_types=1); // erzeugt einen Fehler bei falschen Datentypen
 
    function f( int $x,  int $y=1) : int{

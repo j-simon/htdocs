@@ -1,5 +1,6 @@
 <?php
 
+
 // Datentyp für Logik und Bedingung
 
 // Boolean

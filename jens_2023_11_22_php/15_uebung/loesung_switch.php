@@ -4,17 +4,13 @@ declare(strict_types=1);
 /*
  Schreibe eine Funktion, die einen Integer Wert entgegennimmt und prüft,
  ob dieser gerade oder ungerade ist. 
- 
- 
- gerade Zahlen:  x % 2       x +1   0,2,4,6, ....
- ungerade Zahlen: 1,3,5,7, ....
 
  Gib einen String mit gerade oder ungerade zurück, 
  je nachdem welche Bedingung erfüllt ist.
 */
 
 
-/* Lösung mit if /else */
+/* Lösung mit switch */
 
 function pruefeAufGeradeOderUngerade(int $wert): string
 {
@@ -27,10 +23,13 @@ function pruefeAufGeradeOderUngerade(int $wert): string
     //  5 % 2 ist 1
     // das Ergbnis ist entweder 0 also gerade oder 
     // das Ergebnis ist nicht 0 (1) für ungerade Zahlen 
-    if ($wert % 2 === 0) {
-        $ergebnis = "gerade";
-    } else {
-        $ergebnis = "ungerade";
+    switch ($wert % 2) {
+        case 0:
+            $ergebnis = "gerade";
+            break;
+        case 1:
+            $ergebnis = "ungerade";
+            break;
     }
 
     return $ergebnis;

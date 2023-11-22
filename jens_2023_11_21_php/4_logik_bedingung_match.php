@@ -1,9 +1,9 @@
 <?php
 
-$wochentag = "Testtag";
+// $wochentag = "Testtag";
 // $wochentag ="Montag";
 // $wochentag = "Dienstag";
-// $wochentag = "Mittwoch";
+$wochentag = "Mittwoch";
 // $wochentag ="Donnerstag";
 // $wochentag = "Freitag";
 // $wochentag ="Samstag";
