@@ -1,21 +1,21 @@
 <?php
+// This is only an example, the numbers below will
+// differ depending on your system
+$start= microtime(true); 
 
 
-   //declare(strict_types=1); // erzeugt einen Fehler bei falschen Datentypen
+echo memory_get_usage() . "\n"; // 
 
-   function f( int $x,  int $y=1) : int{
-      $ergebnis = $x + $y;
+$a = str_repeat("Hello", 10_000_000);
+sleep(13);
+echo memory_get_usage() . "\n"; // 
 
-      return $ergebnis;
-   }
+unset($a);
 
-   echo f(1,2); // integers - korrekter Aufruf
+echo memory_get_usage() . "\n"; // 
 
-   echo f(1.1,2.2); // floats - nicht ganz korrekt - 
-                    // erzeugt depraceted oder error meldung je nachdem ob  strict_types deklriert ist,
-                    // oder nicht   
+#der zu messende PHP Code ...
 
-   echo f("1.1","2.2"); // strings - nicht ganz korrekt - 
-                        // erzeugt depraceted oder error meldung je nachdem ob  strict_types deklariert ist,
-                        // oder nicht   
-   
+$dauer = microtime(true) - $start; 
+echo "Verarbeitung des Skripts: $dauer Sek.";
+
