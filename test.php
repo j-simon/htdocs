@@ -7,7 +7,7 @@ $start= microtime(true);
 echo memory_get_usage() . "\n"; // 
 
 $a = str_repeat("Hello", 10_000_000);
-sleep(13);
+//sleep(13);
 echo memory_get_usage() . "\n"; // 
 
 unset($a);
@@ -19,3 +19,5 @@ echo memory_get_usage() . "\n"; //
 $dauer = microtime(true) - $start; 
 echo "Verarbeitung des Skripts: $dauer Sek.";
 
+$dauer = microtime(true) - $start; 
+echo "Verarbeitung des Skripts: $dauer Sek.";
