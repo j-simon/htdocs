@@ -1,4 +1,6 @@
 <?php
+
+
 // This is only an example, the numbers below will
 // differ depending on your system
 $start= microtime(true); 

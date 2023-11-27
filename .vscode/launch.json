@@ -4,8 +4,17 @@
     // Weitere Informationen finden Sie unter https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+    
 
-
+        {
+            "name": "Debug with phpdbg",
+            "type": "php",
+            "request": "launch",
+            "program": "C:\\xampp\\php\\phpdbg.exe",
+            "args": ["-qrr", "c:\\mamp\\htdocs\\debug_test.php"],
+            // "cwd": "c:/MAMP/htdocs",
+            "externalConsole": false
+          },
         {
             "name": "Listen for Xdebug",
             "type": "php",
