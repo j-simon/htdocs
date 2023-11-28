@@ -29,7 +29,37 @@ function berechneSumme(...$zahlen){ // [2,4] , [2,4,6,7,9]
 }
 
 // Anwendung
-echo( berechneSumme(2,4)."\n"  );
+// echo( berechneSumme(2,4)."\n"  );
 
 
-echo(  berechneSumme(2,4,6,7,9,5,6,7,8,9,0)."\n"   );
+// echo(  berechneSumme(2,4,6,7,9,5,6,7,8,9,0)."\n"   );
+
+
+
+function sum(...$numbers)
+{
+    print_r($numbers); // numeric array
+    $result = 0;
+    foreach ($numbers as $number) {
+        $result += $number;
+    }
+
+    return $result;
+}
+
+
+function sumJens($numbers)
+{
+    print_r($numbers); // numeric array
+    $result = 0;
+    foreach ($numbers as $number) {
+        $result += $number;
+    }
+
+    return $result;
+}
+
+echo sum(1, 2, 3, 4, 5); // [1,2,3,4,5]
+
+echo sumJens([1,2,3,4,5]);
+
