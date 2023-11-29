@@ -2,6 +2,9 @@
 
 $result = 0;
 
+
+
+
 function calculate(float|int $numberOne, float|int $numberTwo, string $operator): float|int|string
 {
     switch ($operator) {
@@ -26,9 +29,17 @@ function calculate(float|int $numberOne, float|int $numberTwo, string $operator)
             break;
 
         default:
+            //if  ()
             return "No valid operator given";
     }
+
+
+
+    
+
 }
+
+
 
 function validateInput(array $formData = []): float|int|string
 {
@@ -39,4 +50,20 @@ function validateInput(array $formData = []): float|int|string
     }
 }
 
+
 $result = validateInput($_POST);
+//echo $result;
+// wert scheiben
+if (is_numeric($result)) {
+    $filename= __DIR__ . "\daten.txt";
+    file_put_contents($filename,$result);
+}
+
+
+
+
+
+// wert lesen
+$filename= __DIR__ . "\daten.txt";
+$wert = file_get_contents($filename); // : string
+$result = $wert ;

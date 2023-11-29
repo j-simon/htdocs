@@ -1,6 +1,12 @@
 <?php
+session_start();
+$_SESSION['logged_in']=true;
+//print_r($_SERVER);
+echo "hallo";
+echo $_SERVER['HTTP_ACCEPT_LANGUAGE'];
+$value = 'something from somewhere';
 
-
+setcookie("TestCookie", $value);
 // This is only an example, the numbers below will
 // differ depending on your system
 $start= microtime(true); 
