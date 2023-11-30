@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL); // show all errors, warnings and notices
+
 session_start();
 $_SESSION['logged_in']=true;
 //print_r($_SERVER);
