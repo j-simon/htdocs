@@ -4,9 +4,9 @@
 class Adresse
 {
     // Attribute (nicht: Variable)
-    public $strasse;// = "Teststr.";
-    public $ort;// = "Köln";
-    public $plz;// = "12345";
+    public string $strasse;// = "Teststr.";
+    public string $ort;// = "Köln";
+    public string $plz;// = "12345";
 
     // Methoden Funktionalitäten (nicht: Funktion)
     function zeigeAn() {

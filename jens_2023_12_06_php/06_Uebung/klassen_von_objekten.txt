@@ -1,0 +1,8 @@
+Klasse: Kleidung
+
+Objekt: Schuh
+
+
+Klasse: Hardware
+
+Objekt: Monitor

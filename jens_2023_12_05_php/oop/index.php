@@ -1,11 +1,12 @@
 <?php
+ 
  require_once ("adresse.php");
 
  $vorname = "Jens"; // String
  //echo gettype($vorname);
  // Objekt / object
  $jensAdresse = new Adresse();
- $jensAdresse->strasse="Teststr."; 
+ $jensAdresse->strasse = "Teststr."; 
  $jensAdresse->ort="Köln"; 
  $jensAdresse->plz="12345"; 
 
