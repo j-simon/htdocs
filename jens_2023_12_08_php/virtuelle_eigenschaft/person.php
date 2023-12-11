@@ -109,6 +109,15 @@ class Person {
 // Hauptprogramm
 // aussen
 $jens= new Person();
+
+
+$antwort=$jens instanceof  Person;
+var_dump($antwort);
+
+
+
+exit;
+
 $jens->setVorname("Jens");
 $jens->setNachname("Simon");
 
