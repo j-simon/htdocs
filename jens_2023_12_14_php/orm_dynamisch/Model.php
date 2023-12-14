@@ -1,4 +1,6 @@
 <?php
+use Doctrine\Inflector\InflectorFactory;
+
 class Model
 {
     public function save()
@@ -6,11 +8,17 @@ class Model
 
         //echo get_class($this);
 
-        $tableName = match (get_class($this)) {
+        // manueller Ansatz um singular / plural Transformationen durchzuführen
+        /*$tableName = match (get_class($this)) {
             "User" => "users",
             "Article" => "articles",
             "Invoice" => "invoices",
-        };
+        };*/
+        // automatik mit hilfe doctrine/inflector
+        
+
+        $inflector = InflectorFactory::create()->build();
+        $tableName = $inflector->pluralize(lcfirst(get_class($this))); // browsers
 
         // Die im Objekt befindlich Attributes können ermittelt werden
         // print_r(get_object_vars($this));

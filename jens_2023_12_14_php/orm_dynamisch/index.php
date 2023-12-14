@@ -1,4 +1,10 @@
 <?php
+// Für die fremden mit composer installierten Code-Schnippsel  werden alle Klassen
+// automatisch required 
+require_once "vendor/autoload.php";
+
+
+
 require_once "Model.php";
 require_once "User.php";
 require_once "Article.php";
