@@ -4,19 +4,16 @@
 require_once "vendor/autoload.php";
 
 
-
 require_once "Model.php";
+
 require_once "User.php";
 require_once "Article.php";
 require_once "Invoice.php";
 
 $benutzer = new User();
-
 $benutzer->vorname = "Otto";
 $benutzer->nachname = "Schmitz";
-
 // print_r($benutzer);
-
 $benutzer->save();
 //$benutzer->save(); //SQL Tabelle Benutzer , vorname ,nachname
 // INSERT INTO users (username,email,password) 

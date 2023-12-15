@@ -14,16 +14,11 @@ class Model
             "Article" => "articles",
             "Invoice" => "invoices",
         };*/
-        
         // automatik mit hilfe doctrine/inflector
+        
+
         $inflector = InflectorFactory::create()->build();
         $tableName = $inflector->pluralize(lcfirst(get_class($this))); // browsers
-
-
-
-
-
-
 
         // Die im Objekt befindlich Attributes können ermittelt werden
         // print_r(get_object_vars($this));
@@ -32,8 +27,6 @@ class Model
 
         $keys = "";
         $values = "";
-
-
 
         for ($i = 0; $i < count($objektVariablen); $i++) {
             $key = array_keys($objektVariablen)[$i];
@@ -58,4 +51,30 @@ class Model
 
 
     }
+
+    public static function delete($id) {
+        $inflector = InflectorFactory::create()->build();
+        $tableName = $inflector->pluralize(lcfirst(get_called_class())); // browsers
+
+        $db = new PDO("mysql:host=localhost;dbname=test", "root", "root");
+        $sqlBefehl = "DELETE FROM ". $tableName ." WHERE id=$id";
+        echo $sqlBefehl . "\n";
+        $stmt = $db->query($sqlBefehl);
+
+    }
+
+    public static function getAll() {
+        $inflector = InflectorFactory::create()->build();
+        $tableName = $inflector->pluralize(lcfirst(get_called_class())); // browsers
+
+        $db = new PDO("mysql:host=localhost;dbname=test", "root", "root");
+        $sqlBefehl = "SELECT * FROM ". $tableName;
+        echo $sqlBefehl . "\n";
+        $stmt = $db->query($sqlBefehl);
+        return $stmt->fetchAll();
+
+    }
+
+
+
 }
