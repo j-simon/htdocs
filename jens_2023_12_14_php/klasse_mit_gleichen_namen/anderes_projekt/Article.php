@@ -5,7 +5,7 @@ namespace a\b\c;
 class Article 
 {
 function welcheKlasseBinIch(){
-    echo "aus anderes_projekt Ordner";
+    echo "aus anderes_projekt Ordner\n";
 }
 
 }
